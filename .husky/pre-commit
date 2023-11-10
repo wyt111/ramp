@@ -1,0 +1,12 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# 格式化
+echo "Running code formatting..."
+npm run format
+
+# 提交格式化后的内容
+git add -u
+
+# 退出程序
+exit 0

@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  background: #fff;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/sf-pro-display_regular_400.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/sf-pro-display_semibold_600.woff2") format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/sf-pro-display_bold_700.woff2") format("woff2");
+  font-weight: 700;
+}
+.guide {
+  padding: 0px 16px 40px;
+  max-width: 375px;
+  margin: 0 auto;
+  .nav {
+    padding-top: 24px;
+    margin-bottom: 24px;
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    background: #fff;
+    a {
+      img {
+        width: 24px;
+        height: 24px;
+        display: block;
+      }
+    }
+  }
+  .title {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #252830;
+    margin-bottom: 24px;
+  }
+  .list {
+    margin-bottom: 24px;
+    .item {
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+      .label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        .img {
+          width: 32px;
+          height: 32px;
+          margin-right: 8px;
+        }
+        .text {
+          font-family: "SF Pro Display";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 130%;
+          color: #252830;
+        }
+      }
+      .content {
+        .p {
+          font-family: "SF Pro Display";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 160%;
+          color: #252830;
+          position: relative;
+          padding-left: 20px;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 8px;
+            top: 9px;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: #21242a;
+          }
+        }
+      }
+    }
+  }
+  .tips {
+    background: rgba(255, 125, 0, 0.05);
+    border: 1px solid rgba(255, 125, 0, 0.15);
+    border-radius: 6px;
+    padding: 8px;
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    color: #252830;
+  }
+}

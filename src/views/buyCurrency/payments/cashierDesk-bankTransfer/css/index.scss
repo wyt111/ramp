@@ -1,0 +1,92 @@
+#cashierDesk-bankTransfer {
+  flex: 1;
+  #cashierDesk-bankTransfer-box {
+    padding: 0 0 0;
+    height: 100%;
+    .view-content {
+      //::v-deep .payMethodInfo-va {
+      //  margin-bottom: 0;
+      //  .content {
+      //    border-radius: 0.06rem 0.06rem 0 0;
+      //  }
+      //}
+    }
+    .footer {
+      width: 100%;
+      position: sticky;
+      left: 0;
+      background: #ffffff;
+      padding: 0.08rem 0rem 0rem;
+      z-index: 999;
+      .errorTips {
+        margin-bottom: 0.05rem;
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.13rem;
+        line-height: 0.18rem;
+        color: #f53f3f;
+      }
+    }
+  }
+}
+
+@keyframes loadingIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .loadingIcon {
+    animation: loadingIcon infinite 2s linear;
+  }
+}
+
+.downTips-icon {
+  position: absolute;
+  bottom: 0.8rem;
+  left: 45%;
+  width: 0.5rem;
+  height: 0.36rem;
+  background: rgba(0, 128, 247, 0.24);
+  box-shadow: 0 0 0.15rem rgba(65, 184, 253, 0.25);
+  border-radius: 0.18rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  img {
+    width: 0.2rem;
+  }
+}
+.downTips-icon img {
+  animation: jumpBoxHandler 1.8s infinite; /* 1.8s 事件完成时间周期 infinite无限循环 */
+}
+.v-enter-active,
+.v-leave-active {
+  transition: all 1s;
+}
+.v-enter,
+.v-leave-to {
+  opacity: 0;
+}
+.v-enter-to,
+.v-leave {
+  opacity: 1;
+}
+@keyframes jumpBoxHandler {
+  /* css事件 */
+  0% {
+    transform: translate(0px, 0);
+  }
+  50% {
+    transform: translate(0px, 0.06rem); /* 可配置跳动方向 */
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}

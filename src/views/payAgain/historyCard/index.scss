@@ -1,0 +1,159 @@
+#correspondPaymentMethod {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.12rem;
+    .title {
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.16rem;
+      line-height: 0.2rem;
+      color: #5d636d;
+    }
+    .edit-icon {
+      .edit {
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.16rem;
+        line-height: 0.22rem;
+        color: #0059da;
+        margin-left: 0.16rem;
+        cursor: pointer;
+      }
+    }
+  }
+  .international-card {
+    .card-list {
+      .card-item {
+        height: 0.64rem;
+        background: #ffffff;
+        border: 1px solid #e6e8eb;
+        border-radius: 0.06rem;
+        display: flex;
+        align-items: center;
+        padding: 0 0.16rem;
+        &:not(:last-child) {
+          margin-bottom: 0.12rem;
+        }
+        .card-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 0.16rem;
+          img {
+            width: 0.4rem;
+            height: 0.4rem;
+          }
+        }
+        .card-type {
+          font-family: "SF Pro Display";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 0.16rem;
+          line-height: 0.2rem;
+          color: #252830;
+          display: flex;
+          align-items: center;
+          margin-right: 0.09rem;
+          span {
+          }
+        }
+        .card-num {
+          font-family: "SF Pro Display";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.13rem;
+          line-height: 0.16rem;
+          color: #848b96;
+          display: flex;
+          align-items: center;
+          span {
+          }
+        }
+        .checkView {
+          margin-left: auto;
+          .deleteIcon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              width: 0.16rem;
+              height: 0.16rem;
+              cursor: pointer;
+            }
+          }
+        }
+        cursor: pointer;
+        &:hover {
+          border-color: #cbcfd6;
+        }
+        &.check-true {
+          border: 0.02rem solid #0059da;
+          padding: 0 0.15rem;
+        }
+      }
+    }
+    .cardLimit-tips {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.12rem;
+      line-height: 0.14rem;
+      color: #252830;
+      margin-top: 0.08rem;
+    }
+    .newCardView {
+      display: flex;
+      align-items: center;
+      height: 0.64rem;
+      background: rgba(0, 89, 218, 0.05);
+      border-radius: 0.06rem;
+      padding: 0 0.16rem;
+      cursor: pointer;
+      margin-top: 0.12rem;
+      .card-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.16rem;
+        img {
+          width: 0.4rem;
+          height: 0.4rem;
+        }
+      }
+      .card-type {
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.16rem;
+        line-height: 0.2rem;
+        color: #252830;
+      }
+    }
+    .fromIcon {
+      margin-top: 0.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .support {
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.1rem;
+        line-height: 0.12rem;
+        color: #848b96;
+      }
+      img {
+        margin-left: 0.02rem;
+        width: 0.2rem;
+        height: 0.2rem;
+      }
+    }
+  }
+}

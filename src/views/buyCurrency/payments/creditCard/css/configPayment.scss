@@ -1,0 +1,170 @@
+#configPayment,
+#binancePay {
+  flex: 1;
+  #cardConfigPayment {
+    // padding-bottom: 0.56rem;
+    height: 100%;
+    .cardConfigPayment-content {
+      // overflow: auto;
+      .errorTipsCard {
+        background: rgba(245, 63, 63, 0.1);
+        border-radius: 0.06rem;
+        padding: 0.08rem;
+        display: flex;
+        margin-bottom: 0.24rem;
+        img {
+          width: 0.16rem;
+          height: 0.16rem;
+          margin-right: 0.08rem;
+        }
+        span {
+          font-family: "SF Pro Display";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.13rem;
+          line-height: 0.18rem;
+          color: #252830;
+        }
+      }
+      .cvv-view {
+        height: 0.48rem;
+        position: relative;
+        .title {
+          position: absolute;
+          left: 0.07rem;
+          top: -0.09rem;
+          font-family: "SF Pro Display";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 0.13rem;
+          line-height: 0.18rem;
+          color: #5d636d;
+          z-index: 1;
+          padding: 0 0.04rem;
+          background: #fff;
+        }
+        .cvv-input {
+          border: 1px solid #dbdee3;
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+          border-radius: 0.06rem;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          input {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border: none;
+            padding: 0 0.12rem;
+            font-family: "HarmonyOS Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.16rem;
+            line-height: 0.24rem;
+            color: #252830;
+
+            &:disabled {
+              background: #ffffff;
+              cursor: no-drop;
+            }
+            &::placeholder {
+              font-family: "HarmonyOS Sans";
+              font-style: normal;
+              font-weight: 300;
+              font-size: 0.16rem;
+              line-height: 0.24rem;
+              color: #b7bcc5;
+            }
+          }
+        }
+        &.focus {
+          .cvv-input {
+            border-color: #0059da;
+            // box-shadow: 0 0 0px 0.02rem rgba(0, 89, 218, 0.3);
+          }
+          .title {
+            color: #0059da;
+          }
+        }
+        &.formContentError {
+          .cvv-input {
+            border-color: #f53f3f;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+          }
+          .title {
+            color: #f53f3f;
+          }
+        }
+      }
+      .errorTips {
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.13rem;
+        line-height: 0.18rem;
+        color: #f53f3f;
+        margin-top: 0.02rem;
+      }
+
+      .v-enter-active,
+      .v-leave-active {
+        transition: all 1s;
+      }
+      .v-enter,
+      .v-leave-to {
+        opacity: 0;
+      }
+      .v-enter-to,
+      .v-leave {
+        opacity: 1;
+      }
+      @keyframes jumpBoxHandler {
+        /* css事件 */
+        0% {
+          transform: translate(0px, 0);
+        }
+        50% {
+          transform: translate(0px, 0.06rem); /* 可配置跳动方向 */
+        }
+        100% {
+          transform: translate(0px, 0px);
+        }
+      }
+
+      .downTips-icon {
+        position: absolute;
+        bottom: 0.8rem;
+        left: 45%;
+        width: 0.5rem;
+        height: 0.36rem;
+        //background: rgba(0, 128, 247,0.24);
+        background: #c2e1fd;
+        box-shadow: 0 0 0.15rem rgba(65, 184, 253, 0.25);
+        border-radius: 0.18rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        img {
+          width: 0.2rem;
+          animation: jumpBoxHandler 1.8s infinite; /* 1.8s 事件完成时间周期 infinite无限循环 */
+        }
+      }
+    }
+    .footer,
+    footer {
+      width: 100%;
+      position: sticky;
+      // bottom: 0.2rem;
+      left: 0;
+      background: #ffffff;
+      padding: 0.08rem 0rem 0rem;
+      z-index: 999;
+    }
+  }
+}
+
+.buyPayWaitPage {
+  padding: 0 0.16rem;
+}

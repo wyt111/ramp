@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  background: #fff;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/sf-pro-display_regular_400.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/sf-pro-display_medium_500.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/sf-pro-display_bold_700.woff2") format("woff2");
+  font-weight: 700;
+}
+.no-cookie-view {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 130px 16px 0;
+  max-width: 375px;
+  margin: 0 auto;
+}
+.no-cookie-view .cry {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+.no-cookie-view .title {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #252830;
+  margin-bottom: 20px;
+}
+.no-cookie-view .info {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  text-align: center;
+  color: #252830;
+  margin-bottom: 24px;
+  width: 330px;
+}
+.no-cookie-view .ramp-link {
+  width: 100%;
+  height: 48px;
+  background: #0059da;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+.no-cookie-view .ramp-link:hover {
+  background: #0052c9;
+}
+.no-cookie-view .ramp-link:active {
+  background: #004bb7;
+}
+.no-cookie-view .tips {
+  background: rgba(2, 96, 231, 0.1);
+  border: 1px solid rgba(2, 96, 231, 0.2);
+  border-radius: 6px;
+  min-height: 81px;
+  padding: 12px 12px 12px 42px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.no-cookie-view .tips .tips-img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 12px;
+  left: 12px;
+}
+.no-cookie-view .tips .tips-info {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #252830;
+}
+.no-cookie-view .tips .tips-info a {
+  color: #0059da;
+}
+.no-cookie-view .tips .tips-info .p1 {
+  margin-bottom: 6px;
+}
+.no-cookie-view .refresh {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  margin-top: auto;
+}
+.no-cookie-view .refresh .text {
+  width: 227px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: #252830;
+  margin-bottom: 8px;
+}
+.no-cookie-view .refresh a.refresh-link {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: #0059da;
+  background: #ffffff;
+  border: 1px solid #0059da;
+  border-radius: 6px;
+  padding: 7px 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.no-cookie-view .refresh a.refresh-link:hover {
+  border-color: #0052c9;
+  color: #0052c9;
+}
+.no-cookie-view .refresh a.refresh-link:active {
+  border-color: #004bb7;
+  color: #004bb7;
+}

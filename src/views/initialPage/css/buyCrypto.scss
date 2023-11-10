@@ -1,0 +1,284 @@
+.pay_input ::v-deep .van-field__control:disabled {
+  color: #0059da !important;
+  -webkit-text-fill-color: #0059da !important;
+}
+
+// UI-2.0.1
+#buyCrypto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .buyCrypto_content {
+    .methods_select {
+      position: relative;
+      .form_title {
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.14rem;
+        line-height: 0.18rem;
+        color: #252830;
+        margin-bottom: 0.06rem;
+        display: flex;
+        align-items: center;
+        .tipsIcon {
+          width: 0.14rem;
+          height: 0.14rem;
+          display: flex;
+          cursor: pointer;
+          margin-left: 0.07rem;
+        }
+      }
+      .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 0.64rem;
+        background: #ffffff;
+        border: 1px solid #e6e8eb;
+        border-radius: 0.06rem;
+        padding: 0 0.16rem;
+        &.inputFocus {
+          border-color: #0059da;
+        }
+        &.warningTextState {
+          border-color: #f53f3f;
+        }
+
+        .methods_select-left {
+          ::v-deep .pay_input {
+            width: 100%;
+            padding: 0 0.24rem 0 0;
+            .van-cell__value {
+              .van-field__body {
+                .van-field__control {
+                  font-family: "HarmonyOS Sans";
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 0.24rem;
+                  line-height: 0.55rem;
+                  color: #252830;
+                  border: none;
+                  outline: none;
+                  &::placeholder {
+                    color: #b7bcc5;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .get_company {
+          display: flex;
+          align-items: center;
+          padding-left: 0.12rem;
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            width: 0.01rem;
+            height: 0.4rem;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: linear-gradient(
+              180deg,
+              rgba(208, 212, 219, 0) 0%,
+              #e6e8eb 45.31%,
+              rgba(208, 212, 219, 0) 100%
+            );
+          }
+          .getImg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 0.32rem;
+            height: 0.32rem;
+            img {
+              border-radius: 50%;
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .fiatImg {
+            width: 0.32rem;
+            height: 0.32rem;
+          }
+          .getText {
+            font-family: "SF Pro Display";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 0.16rem;
+            line-height: 0.2rem;
+            text-align: left;
+            color: #252830;
+            margin: 0 0.1rem;
+            min-width: 0.42rem;
+            .network-name {
+              max-width: 0.42rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              color: #848b96;
+              font-family: SF Pro Display;
+              font-size: 0.12rem;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 0.12rem;
+              margin-top: 0.04rem;
+            }
+          }
+          .rightIcon {
+            width: 0.08rem;
+            height: 0.08rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+      .warning_text {
+        // position: absolute;
+        // top: 100%;
+        // left: 0;
+        margin-top: 1px;
+        height: 0;
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.12rem;
+        line-height: 0.18rem;
+        color: #f53f3f;
+        transition: all 0.3s;
+        // overflow: hidden;
+        &.show_warning_text {
+          height: 0.18rem;
+        }
+      }
+      & .cursor {
+        cursor: auto;
+      }
+    }
+    .get_methods_select {
+      margin: 0.24rem 0 0.24rem 0;
+      .form_title {
+      }
+      .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .methods_select-left {
+          flex: 1;
+          padding-right: 0.24rem;
+          overflow: auto;
+          .get_input {
+            width: auto;
+            overflow: auto;
+            font-family: "HarmonyOS Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 0.24rem;
+            line-height: 0.28rem;
+            span {
+              color: #252830;
+            }
+            .no_getAmount {
+              color: #b7bcc5;
+            }
+          }
+        }
+        .get_company {
+          display: flex;
+          flex-direction: column;
+
+          align-items: flex-end;
+
+          .get_company_flex {
+            display: flex;
+            align-items: center;
+            .getImg {
+              position: relative;
+              .coinImg {
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+              }
+              .networkImg {
+                position: absolute;
+                width: 0.14rem;
+                height: auto;
+                bottom: -0.04rem;
+                right: -0.04rem;
+                border: 0.01rem solid #fff;
+                border-radius: 50%;
+                background: #fff;
+              }
+            }
+            .getText {
+            }
+            .rightIcon {
+              img {
+              }
+            }
+          }
+        }
+      }
+    }
+    .calculationProcess {
+    }
+    .continue {
+      width: 100%;
+      height: 0.48rem;
+      border-radius: 0.06rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      margin-top: 0.2rem;
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.16rem;
+      line-height: 0.19rem;
+      text-align: center;
+      color: #ffffff;
+
+      .rightIcon {
+        width: 0.2rem;
+        margin-left: 0.08rem;
+        span {
+          height: 0.17rem;
+        }
+      }
+
+      &[disabled] {
+        background: #0059da;
+        opacity: 0.2;
+        cursor: no-drop;
+      }
+      &.continue_true {
+        background: #0059da;
+        opacity: 1;
+        cursor: pointer;
+        &:hover {
+          background: #0052c9;
+        }
+        &:active {
+          background: #004bb7;
+        }
+      }
+    }
+  }
+
+  .footer {
+    // height: 0.57rem;
+    margin-block: auto 0px;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,258 @@
+#errorCardInfo_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#errorCardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .view-content {
+    .errorTips {
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.13rem;
+      line-height: 0.18rem;
+      color: #f53f3f;
+      margin-top: 0.02rem;
+    }
+    .cardNumberError {
+      margin-bottom: 0.06rem;
+    }
+  }
+  .formLine {
+    position: relative;
+    margin-bottom: 0.25rem;
+    .formContent {
+      display: flex;
+      height: 0.48rem;
+      width: 100%;
+      position: relative;
+      .formTitle {
+        position: absolute;
+        left: 0.07rem;
+        top: -0.09rem;
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.13rem;
+        line-height: 0.18rem;
+        color: #5d636d;
+        z-index: 1;
+        padding: 0 0.04rem;
+        background: #fff;
+      }
+      .input-box {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #dbdee3;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 0.06rem;
+        overflow: hidden;
+      }
+
+      input.dataName {
+        min-height: 0;
+        height: 0.46rem;
+        width: 100%;
+        font-family: "HarmonyOS Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.16rem;
+        line-height: 0.24rem;
+        color: #252830;
+        border: 0;
+        outline: 0;
+        padding: 0 0.12rem;
+
+        &::placeholder {
+          font-family: "HarmonyOS Sans";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 0.16rem;
+          line-height: 0.24rem;
+          color: #b7bcc5;
+        }
+      }
+
+      .rightIcon {
+        display: flex;
+        position: absolute;
+        top: 0.23rem;
+        right: 0.2rem;
+        img {
+          width: 0.12rem;
+        }
+      }
+      .loadingIcon {
+        top: 0.15rem;
+      }
+      &:hover {
+        .input-box {
+          border-color: #babfc8;
+        }
+      }
+      &.formContentFocus {
+        .formTitle {
+          color: #0059da;
+        }
+        .input-box {
+          border-color: #0059da;
+          // box-shadow: 0 0 0px 0.02rem rgba(0, 89, 218, 0.3);
+        }
+      }
+
+      &.formContentError {
+        .formTitle {
+          color: #f53f3f;
+        }
+        .input-box {
+          border-color: #f53f3f;
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+        }
+      }
+    }
+  }
+  .formLine_flex {
+    display: flex;
+    justify-content: space-between;
+    .formLine_flex_child {
+      position: relative;
+      width: 1.64rem;
+    }
+  }
+}
+
+//数字输入框
+.van-cell {
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+.number_input :deep(.van-field__body) {
+  overflow: visible !important;
+}
+.number_input :deep(.van-cell__value) {
+  overflow: visible !important;
+}
+.number_input :deep(.van-field__control:focus) {
+  // border: 1px solid #6e7687;
+  // box-shadow: 0px 0px 35px rgba(89, 153, 248, 0.2);
+}
+.continue {
+  width: 3.43rem;
+  margin: 0 auto;
+  height: 0.48rem;
+  border-radius: 0.06rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.16rem;
+  line-height: 0.19rem;
+  text-align: center;
+  color: #ffffff;
+  background: #0059da;
+  opacity: 1;
+  cursor: pointer;
+  .rightIcon {
+    width: 0.2rem;
+    margin-left: 0.08rem;
+    span {
+      height: 0.17rem;
+    }
+  }
+
+  &:hover {
+    background: #0052c9;
+  }
+  &:active {
+    background: #004bb7;
+  }
+  &:disabled {
+    background: #0059da;
+    opacity: 0.2;
+    cursor: no-drop;
+  }
+}
+.input-box {
+  ::v-deep .van-field__control {
+    min-height: 0;
+    height: 0.46rem;
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.16rem;
+    line-height: 0.24rem;
+    color: #252830;
+    padding: 0 0.12rem;
+    border: none;
+    &::placeholder {
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 0.16rem;
+      line-height: 0.24rem;
+      color: #b7bcc5;
+    }
+  }
+}
+// 有值后输入框样式
+#cardNumber,
+#cardCvv {
+  ::v-deep .van-field__control {
+    font-family: "HarmonyOS Sans";
+    &::placeholder {
+      font-family: "HarmonyOS Sans";
+    }
+  }
+
+  ::v-deep .van-field__right-icon {
+    position: absolute;
+    right: 0.16rem;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    margin: 0;
+    width: 0.36rem;
+    height: 0.24rem;
+    border-radius: 0.03rem;
+    box-shadow: 0 0 0 0.75px #dbdee3;
+    overflow: hidden;
+    img {
+      width: 0.36rem;
+      height: 0.24rem;
+      display: block;
+    }
+  }
+
+  &.formContentError {
+    ::v-deep .van-field__right-icon {
+      position: absolute;
+      right: 0.16rem;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 0;
+      margin: 0;
+      width: 0.16rem;
+      height: 0.16rem;
+      box-shadow: none;
+
+      img {
+        width: 0.16rem;
+        height: 0.16rem;
+        display: block;
+      }
+    }
+  }
+}
+
+.van-overlay {
+  background-color: rgba(0, 0, 0, 0);
+}

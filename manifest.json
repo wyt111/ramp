@@ -1,0 +1,27 @@
+{
+  "id": "ACH-Ramp",
+  "name": "ACH Ramp",
+  "url": "https://ramp.alchemypay.org/?appId=ahzxh0klegv1fzol#/index",
+  "homepageUrl": "https://alchemypay.org",
+  "icon": "https://ramp.alchemypay.org/static/img/AlchemyPay.95234eef.svg",
+  "platform": "all",
+  "apiVersion": "0.0.1",
+  "manifestVersion": "1",
+  "branch": "debug",
+  "categories": ["tools"],
+  "currencies": "*",
+  "content": {
+    "shortDescription": {
+      "en": "Bridging the Fiat and Crypto Global Economies."
+    },
+    "description": {
+      "en": "Bridging the Fiat and Crypto Global Economies."
+    }
+  },
+  "permissions": [
+    {
+      "method": "*"
+    }
+  ],
+  "domains": ["https://*"]
+}

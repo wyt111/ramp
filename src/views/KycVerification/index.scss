@@ -1,0 +1,206 @@
+.KycVer-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .icon {
+    height: 0.15rem !important;
+  }
+  .kyc_nav {
+    width: 100%;
+    height: 0.32rem;
+    // margin-bottom: .65rem;
+    img {
+      float: right;
+      height: 0.22rem;
+      cursor: pointer;
+    }
+  }
+  .Verification_content {
+    width: 100%;
+    height: 100%;
+    // flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .lvText {
+        color: #0059da;
+      }
+      .error-title {
+        width: 100%;
+        font-family: Semibold;
+        font-weight: 600;
+        font-size: 0.13rem;
+        line-height: 0.16rem;
+        color: #6e7687;
+      }
+      > img {
+        width: 1.75rem;
+      }
+      .tips-text {
+        max-width: 2.6rem;
+        font-family: Medium;
+        font-weight: 500;
+        font-size: 0.16rem;
+        line-height: 0.22rem;
+        text-align: center;
+        color: #252830;
+        margin: 0.2rem 0;
+      }
+      .tips-list-start {
+        width: 2.6rem !important;
+        margin-left: 0.3rem;
+        &:nth-of-type(1) {
+          margin-top: 0 !important;
+        }
+      }
+      .tips-list {
+        width: 100%;
+        font-size: 0.13rem;
+        line-height: 0.16rem;
+        font-family: Regular;
+        font-weight: 400;
+        color: #6e7687;
+        display: flex;
+        margin-top: 0.08rem;
+        p {
+          line-height: 0.18rem;
+          font-family: Regular;
+          font-weight: 400;
+        }
+        p:first-child {
+          width: 0.1rem;
+        }
+      }
+      .tips-list:nth-of-type(2) {
+        margin-top: 0.12rem;
+      }
+
+      .verify_list {
+        width: 90%;
+        font-size: 0.13rem;
+        color: #6e7687;
+        line-height: 0.16rem;
+        margin-top: 0.2rem;
+        li {
+          margin-top: 0.06rem;
+          font-family: Regular;
+          font-weight: 400;
+          display: flex;
+          span {
+            display: inline-block;
+            margin-left: 0.05rem;
+          }
+        }
+      }
+    }
+
+    .transactionAmount {
+      font-family: Regular;
+      font-weight: 400;
+      font-size: 0.13rem;
+      line-height: 0.16rem;
+      color: #6e7687;
+      text-align: center;
+      margin-bottom: 0.12rem;
+      span {
+        color: #0059da;
+      }
+    }
+
+    .Verification_button {
+      width: 100%;
+      height: 0.48rem;
+      border-radius: 0.06rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      margin-top: 0.2rem;
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.16rem;
+      line-height: 0.19rem;
+      text-align: center;
+      color: #ffffff;
+      background: #0059da;
+      opacity: 1;
+      cursor: pointer;
+      .rightIcon {
+        width: 0.2rem;
+        margin-left: 0.08rem;
+        span {
+          height: 0.17rem;
+        }
+      }
+
+      &[disabled] {
+        background: #0059da;
+        opacity: 0.2;
+        cursor: not-allowed;
+      }
+
+      &:hover {
+        background: #0052c9;
+      }
+      &:active {
+        background: #004bb7;
+      }
+    }
+  }
+  .verif_kyc {
+    width: 3.5rem;
+    min-width: 330px;
+    position: fixed;
+    overflow: scroll;
+    .verif_kyc_nav {
+      width: 100%;
+      height: 0.3rem;
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      right: 0;
+
+      > div {
+        padding: 0.07rem;
+        cursor: pointer;
+        float: right;
+        // position: absolute;
+        // right: -.05rem;
+        // top: .0rem;
+        > img {
+          height: 0.22rem;
+        }
+      }
+    }
+
+    #sumsub-websdk-container {
+      height: 100%;
+      padding-top: 0.1rem;
+      padding-left: 0.3rem;
+      overflow: scroll;
+    }
+  }
+}
+
+.Verification_content .kyc_nav .tips,
+.verif_kyc .verif_kyc_nav .tips {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.12rem;
+  line-height: 0.32rem;
+  color: #6e7687;
+  // margin-bottom: 0.2rem;
+}
+.KycVer-container .verif_kyc #sumsub-websdk-container {
+  padding-left: 0;
+}
+.KycVer-container .verif_kyc {
+  left: 50%;
+  transform: translateX(-50%);
+}

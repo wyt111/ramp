@@ -1,0 +1,642 @@
+[
+  {
+    "type": "eWallet",
+    "name": "OVO",
+    "icon": "OVO.png",
+    "payWayCode": "10006",
+    "supportedCountries": [],
+    "routerPath": "/otherWayPay"
+  },
+  {
+    "type": "eWallet",
+    "name": "DANA",
+    "icon": "DANA.png",
+    "payWayCode": "10005",
+    "supportedCountries": [],
+    "routerPath": "/otherWayPay"
+  },
+  {
+    "type": "qrCode",
+    "name": "QRIS",
+    "icon": "QRIS.png",
+    "qrIcon": "QRIS-qr.png",
+    "payWayCode": "10004",
+    "supportedCountries": [],
+    "routerPath": "/otherWayPay"
+  },
+  {
+    "type": "virtualAccount",
+    "name": "Bank Transfer",
+    "icon": "Bank.png",
+    "payWayCode": "210",
+    "supportedCountries": [],
+    "routerPath": "/otherWayPay"
+  },
+  {
+    "type": "eWallet",
+    "name": "MoMo",
+    "icon": "momo.svg",
+    "payWayCode": "201",
+    "supportedCountries": [],
+    "routerPath": "/otherWayPay"
+  },
+  {
+    "type": "eWallet",
+    "name": "ZaloPay",
+    "icon": "ZalaPay.svg",
+    "payWayCode": "202",
+    "supportedCountries": [],
+    "routerPath": "/otherWayPay"
+  },
+  {
+    "type": "eWallet",
+    "name": "ViettelPay",
+    "icon": "ViettelPay.svg",
+    "payWayCode": "203",
+    "supportedCountries": [],
+    "routerPath": "/otherWayPay"
+  },
+  {
+    "type": "eWallet",
+    "name": "PAYNOW",
+    "icon": "PAYNOW.png",
+    "qrIcon": "PAYNOW-qr.png",
+    "payWayCode": "40001",
+    "supportedCountries": [],
+    "routerPath": "/otherWayPay"
+  },
+  {
+    "type": "eWallet",
+    "name": "eNETS",
+    "icon": "e NETS.png",
+    "payWayCode": "40002",
+    "supportedCountries": [],
+    "routerPath": "/otherWayPay"
+  },
+  {
+    "type": "qrCode",
+    "name": "ThaiQR",
+    "icon": "Thai QR.png",
+    "qrIcon": "Thai QR-qr.png",
+    "payWayCode": "40003",
+    "supportedCountries": [],
+    "routerPath": "/otherWayPay"
+  },
+  {
+    "type": "qrCode",
+    "name": "ThaiQR",
+    "icon": "Thai QR.png",
+    "payWayCode": "40004",
+    "supportedCountries": [],
+    "routerPath": "/otherWayPay"
+  },
+  {
+    "type": "binancePay",
+    "name": "Binance Pay",
+    "icon": "Binancce.svg",
+    "payWayCode": "20001",
+    "supportedCountries": [],
+    "routerPath": "/binancePay"
+  },
+  {
+    "type": "applePay",
+    "name": "Apple Pay",
+    "icon": "Apple pay.svg",
+    "payWayCode": "501",
+    "supportedCountries": [],
+    "routerPath": "/applePay"
+  },
+  {
+    "type": "applePay",
+    "name": "Apple Pay",
+    "icon": "Apple pay.svg",
+    "payWayCode": "502",
+    "supportedCountries": [],
+    "routerPath": "/applePay"
+  },
+  {
+    "type": "googlePay",
+    "name": "Google Pay",
+    "icon": "Google pay.svg",
+    "payWayCode": "701",
+    "supportedCountries": [],
+    "routerPath": "/googlePay"
+  },
+  {
+    "type": "googlePay",
+    "name": "Google Pay",
+    "icon": "Google pay.svg",
+    "payWayCode": "702",
+    "supportedCountries": [],
+    "routerPath": "/googlePay"
+  },
+  {
+    "type": "Philippines",
+    "name": "PSE",
+    "icon": "PSE.png",
+    "payWayCode": "12000",
+    "supportedCountries": [],
+    "routerPath": "/PSEWayPay"
+  },
+  {
+    "type": "Philippines",
+    "name": "Pagsmile",
+    "icon": "pagsmile.png",
+    "payWayCode": "11000",
+    "supportedCountries": [],
+    "routerPath": "/pagsmilePay"
+  },
+  {
+    "type": "Philippines",
+    "name": "PAGA",
+    "icon": "ngn.svg",
+    "payWayCode": "18000",
+    "supportedCountries": [],
+    "routerPath": "/nigeriaPay"
+  },
+  {
+    "type": "virtualAccount",
+    "name": "Bank Transfer",
+    "icon": "Bank.png",
+    "payWayCode": "13000",
+    "supportedCountries": [],
+    "routerPath": "/pagsmilePay"
+  },
+  {
+    "type": "card",
+    "name": "VISA",
+    "icon": "VISA.svg",
+    "payWayCode": "10001",
+    "supportedCountries": [],
+    "cardType": "visa",
+    "routerPath": "/creditCardConfig"
+  },
+  {
+    "type": "card",
+    "name": "MIR",
+    "icon": "MIR.svg",
+    "payWayCode": "10001",
+    "supportedCountries": [],
+    "cardType": "mir",
+    "routerPath": "/creditCardConfig"
+  },
+  {
+    "type": "card",
+    "name": "Mastercard",
+    "icon": "Master.svg",
+    "payWayCode": "10001",
+    "supportedCountries": [],
+    "cardType": "mastercard",
+    "routerPath": "/creditCardConfig"
+  },
+  {
+    "type": "card",
+    "name": "Diners",
+    "icon": "diner.svg",
+    "payWayCode": "10001",
+    "supportedCountries": [],
+    "cardType": "diners-club",
+    "routerPath": "/creditCardConfig"
+  },
+  {
+    "type": "card",
+    "name": "Discover",
+    "icon": "discover.png",
+    "payWayCode": "10001",
+    "supportedCountries": [],
+    "cardType": "discover",
+    "routerPath": "/creditCardConfig"
+  },
+  {
+    "type": "Philippines",
+    "name": "PIX",
+    "icon": "PIX.svg",
+    "qrIcon": "PIX-qr.png",
+    "payWayCode": "30001",
+    "supportedCountries": [],
+    "routerPath": "/brazilPay"
+  },
+  {
+    "type": "Philippines",
+    "name": "SPEI",
+    "icon": "SPEI.png",
+    "payWayCode": "601",
+    "supportedCountries": [],
+    "routerPath": "/cashierDesk-bankTransfer"
+  },
+  {
+    "type": "virtualAccount",
+    "name": "Bank Transfer",
+    "icon": "Bank.png",
+    "payWayCode": "30002",
+    "supportedCountries": [],
+    "routerPath": "/ArgentinaPay"
+  },
+  {
+    "type": "eWallet",
+    "name": "GCASH",
+    "icon": "GCash.svg",
+    "payWayCode": "80059",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "qrCode",
+    "name": "Insta Pay",
+    "icon": "InstaPay.png",
+    "qrIcon": "InstaPay-qr.png",
+    "payWayCode": "90007",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "RCBC",
+    "icon": "RCBC.svg",
+    "payWayCode": "80070",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "UnionBank",
+    "icon": "Union.svg",
+    "payWayCode": "80041",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "BPI",
+    "icon": "BPI.svg",
+    "payWayCode": "80040",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "CIMB",
+    "icon": "CIMB.png",
+    "payWayCode": "10003",
+    "supportedCountries": [],
+    "bankCode": "B1",
+    "routerPath": "/otherWays-VA"
+  },
+  {
+    "type": "Philippines",
+    "name": "Mandiri",
+    "icon": "Mandiri.png",
+    "payWayCode": "10003",
+    "supportedCountries": [],
+    "bankCode": "M1",
+    "routerPath": "/otherWays-VA"
+  },
+  {
+    "type": "Philippines",
+    "name": "Permata",
+    "icon": "Permata.png",
+    "payWayCode": "10003",
+    "supportedCountries": [],
+    "bankCode": "BT",
+    "routerPath": "/otherWays-VA"
+  },
+  {
+    "type": "Philippines",
+    "name": "BRI",
+    "icon": "BRI.png",
+    "payWayCode": "10003",
+    "supportedCountries": [],
+    "bankCode": "BRI",
+    "routerPath": "/otherWays-VA"
+  },
+  {
+    "type": "Philippines",
+    "name": "Danamon",
+    "icon": "Danamon.png",
+    "payWayCode": "10003",
+    "supportedCountries": [],
+    "bankCode": "I2",
+    "routerPath": "/otherWays-VA"
+  },
+  {
+    "type": "Philippines",
+    "name": "Bancnet",
+    "icon": "Bancnet.svg",
+    "payWayCode": "80039",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "BDO",
+    "icon": "BDO.svg",
+    "payWayCode": "80068",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "Bank Transfer",
+    "icon": "",
+    "payWayCode": "300",
+    "supportedCountries": [],
+    "routerPath": "/binancePay"
+  },
+  {
+    "type": "Philippines",
+    "name": "Coins",
+    "icon": "Coins.png",
+    "payWayCode": "80066",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "eWallet",
+    "name": "UPI",
+    "icon": "INR-90001.svg",
+    "payWayCode": "90001",
+    "supportedCountries": [],
+    "routerPath": "/otherWayPay"
+  },
+  {
+    "type": "Philippines",
+    "name": "IMPS",
+    "icon": "INR-90002.png",
+    "payWayCode": "90002",
+    "supportedCountries": [],
+    "routerPath": "/otherWayPay"
+  },
+  {
+    "type": "Philippines",
+    "name": "PayID",
+    "icon": "PayID-22000.svg",
+    "payWayCode": "22000",
+    "supportedCountries": [],
+    "routerPath": "/otherWayPay"
+  },
+  {
+    "type": "Philippines",
+    "name": "POLi",
+    "icon": "Poli-23000.svg",
+    "payWayCode": "23000",
+    "supportedCountries": [],
+    "routerPath": "/otherWayPay"
+  },
+
+  {
+    "type": "Philippines",
+    "name": "Insta Pay",
+    "icon": "php-41001.png",
+    "payWayCode": "41001",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "eWallet",
+    "name": "Maya Pay",
+    "icon": "php-41002.png",
+    "payWayCode": "41002",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "Security Online",
+    "icon": "php-41003.png",
+    "payWayCode": "41003",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "BDO",
+    "icon": "php-41004.png",
+    "payWayCode": "41004",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "PsBank",
+    "icon": "php-41005.png",
+    "payWayCode": "41005",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "RCBC",
+    "icon": "php-41006.png",
+    "payWayCode": "41006",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "PbCom",
+    "icon": "php-41007.png",
+    "payWayCode": "41007",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "Union Bank",
+    "icon": "php-41008.png",
+    "payWayCode": "41008",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "Maya Pay",
+    "icon": "php-41009.png",
+    "payWayCode": "41009",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "Ucpb Online",
+    "icon": "php-41010.png",
+    "payWayCode": "41010",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "Metro Bank",
+    "icon": "php-41011.png",
+    "payWayCode": "41011",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "eWallet",
+    "name": "Coins Ph",
+    "icon": "php-41012.png",
+    "payWayCode": "41012",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "Pesonet",
+    "icon": "php-41013.png",
+    "payWayCode": "41013",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "eWallet",
+    "name": "GCASH",
+    "icon": "php-41014.png",
+    "payWayCode": "41014",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "MayBank2u",
+    "icon": "php-41015.png",
+    "payWayCode": "41015",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "China Bank",
+    "icon": "php-41016.png",
+    "payWayCode": "41016",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "Robinsons Online",
+    "icon": "php-41017.png",
+    "payWayCode": "41017",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "LandBank ATM",
+    "icon": "php-41018.png",
+    "payWayCode": "41018",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "BPI",
+    "icon": "php-41019.png",
+    "payWayCode": "41019",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "eWallet",
+    "name": "Grab Pay",
+    "icon": "php-41020.png",
+    "payWayCode": "41020",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "Bank of Commerce",
+    "icon": "php-41021.png",
+    "payWayCode": "41021",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "Vakif Bank",
+    "icon": "TRY-51001.png",
+    "payWayCode": "51001",
+    "supportedCountries": ["TR"],
+    "routerPath": "/cashierDesk-bankTransfer"
+  },
+  {
+    "type": "Philippines",
+    "name": "Ziraat Bank",
+    "icon": "TRY-51002.png",
+    "payWayCode": "51002",
+    "supportedCountries": ["TR"],
+    "routerPath": "/cashierDesk-bankTransfer"
+  },
+  {
+    "type": "Philippines",
+    "name": "Domestic Wire",
+    "icon": "53002.png",
+    "payWayCode": "53002",
+    "supportedCountries": [],
+    "routerPath": "/cashierDesk-bankTransfer"
+  },
+  {
+    "type": "Philippines",
+    "name": "ACH",
+    "icon": "53001.png",
+    "payWayCode": "53001",
+    "supportedCountries": [],
+    "routerPath": "/cashierDesk-bankTransfer"
+  },
+  {
+    "type": "eWallet",
+    "name": "BLIK",
+    "icon": "php-52001.png",
+    "payWayCode": "52001",
+    "supportedCountries": ["PL"],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "eWallet",
+    "name": "Ideal",
+    "icon": "php-52002.png",
+    "payWayCode": "52002",
+    "supportedCountries": ["NL"],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "eWallet",
+    "name": "Bancontact",
+    "icon": "php-52003.png",
+    "payWayCode": "52003",
+    "supportedCountries": ["BE"],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "eWallet",
+    "name": "Neteller",
+    "icon": "php-52004.png",
+    "payWayCode": "52004",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "eWallet",
+    "name": "Skrill",
+    "icon": "php-52005.png",
+    "payWayCode": "52005",
+    "supportedCountries": [],
+    "routerPath": "/phpPayment"
+  },
+  {
+    "type": "Philippines",
+    "name": "SEPA",
+    "icon": "53003.png",
+    "payWayCode": "53003",
+    "supportedCountries": [],
+    "routerPath": "/cashierDesk-bankTransfer"
+  },
+  {
+    "type": "Philippines",
+    "name": "FPS",
+    "icon": "53004.png",
+    "payWayCode": "53004",
+    "supportedCountries": [],
+    "routerPath": "/cashierDesk-bankTransfer"
+  }
+]

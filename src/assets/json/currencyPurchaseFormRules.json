@@ -1,0 +1,2100 @@
+[
+  {
+    "currency": "USD",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,255}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.address_account_holder",
+        "placeholder": "sellFormUserInfo.own_address",
+        "paramsName": "address",
+        "model": "",
+        "regular": "^.{1,255}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.AddressTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.country",
+        "placeholder": "",
+        "paramsName": "country",
+        "model": "",
+        "regular": "",
+        "maxLength": "",
+        "required": "",
+        "tips": "",
+        "tipsState": false
+      },
+
+      {
+        "name": "sellFormUserInfo.city",
+        "paramsName": "city",
+        "model": "",
+        "regular": "^.{1,255}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.CityTips",
+        "tipsState": false,
+        "multinomialTipsState": false,
+        "width": "164"
+      },
+      {
+        "name": "sellFormUserInfo.state",
+        "paramsName": "state",
+        "model": "",
+        "regular": "",
+        "maxLength": "50",
+        "required": true,
+        "tips": "sellForm.StateTips",
+        "tipsState": false,
+        "width": "164"
+      },
+      {
+        "name": "ArgentinaPay.phone",
+        "placeholder": "sellFormUserInfo.phone_number_placeholder_usd",
+        "paramsName": "contactNumber",
+        "model": "",
+        "regular": "^\\d{3}-?\\d{3}-?\\d{4}$",
+        "regular_separator_position": [3, 6],
+        "maxLength": "12",
+        "required": true,
+        "tips": "sellForm.phoneTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.postcode",
+        "paramsName": "postcode",
+        "model": "",
+        "regular": "",
+        "maxLength": "15",
+        "required": true,
+        "tips": "sellForm.PostcodeTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+
+      {
+        "name": "sellFormUserInfo.bank_name",
+        "placeholder": "sellFormUserInfo.enter_bank_name1",
+        "paramsName": "bankName",
+        "model": "",
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.bank_account_type",
+        "paramsName": "bankAccountType",
+        "model": "",
+        "type": "radio",
+        "radioList": [
+          {
+            "key": "4",
+            "value": "sellForm.bankAccountTypeLi_Checking"
+          },
+          {
+            "key": "8",
+            "value": "sellFormUserInfo.current"
+          },
+          {
+            "key": "3",
+            "value": "sellForm.bankAccountTypeLi_Saving"
+          }
+        ],
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "sellForm.bankAccountTypeTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^[0-9A-Z]{1,50}$",
+        "maxLength": "50",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.swift_code",
+        "placeholder": "sellFormUserInfo.swift_code4",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.ach_number",
+        "placeholder": "sellFormUserInfo.digit_number_9",
+        "paramsName": "routingCodeValue2",
+        "model": "",
+        "regular": "^[0-9]{9}$",
+        "maxLength": "9",
+        "required": true,
+        "tips": "sellForm.achCodeTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "BDT",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,150}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.address_account_holder",
+        "placeholder": "sellFormUserInfo.own_address",
+        "paramsName": "address",
+        "model": "",
+        "regular": "",
+        "maxLength": "200",
+        "required": true,
+        "tips": "sellForm.AddressTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellForm.contactNumber",
+        "paramsName": "contactNumber",
+        "model": "",
+        "regular": "^[0-9]+$",
+        "maxLength": "17",
+        "required": true,
+        "tips": "sellForm.contactNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^(?=.*\\d)[A-Za-z0-9]{1,50}$",
+        "maxLength": "50",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.swift_code",
+        "placeholder": "sellFormUserInfo.character_code_8_11",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "^[A-Za-z0-9]{8}$|^[A-Za-z0-9]{11}$",
+        "maxLength": "11",
+        "required": true,
+        "tips": "sellForm.swiftCodeTips",
+        "tipsState": false,
+        "multinomialTipsState": false,
+        "multinomialTips": "sellForm.branchNameMultinomialTips"
+      },
+      {
+        "name": "sellForm.branchName",
+        "paramsName": "routingCodeValue2",
+        "model": "",
+        "regular": "",
+        "maxLength": "250",
+        "required": true
+      }
+    ]
+  },
+  {
+    "currency": "JPY",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,150}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.bank_account_type",
+        "paramsName": "bankAccountType",
+        "model": "",
+        "type": "radio",
+        "radioList": [
+          {
+            "key": "3",
+            "value": "sellForm.bankAccountTypeLi_Saving"
+          },
+          {
+            "key": "4",
+            "value": "sellForm.bankAccountTypeLi_Checking"
+          },
+          {
+            "key": "5",
+            "value": "sellForm.bankAccountTypeLi_TimeDeposit"
+          },
+          {
+            "key": "6",
+            "value": "sellForm.bankAccountTypeLi_Others"
+          }
+        ],
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "sellForm.bankAccountTypeTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^[0-9]{1,7}$",
+        "maxLength": "7",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "itemType": "alternative",
+        "list": [
+          {
+            "name": "sellFormUserInfo.bank_code"
+          },
+          {
+            "name": "sellFormUserInfo.swift_code"
+          }
+        ]
+      },
+      {
+        "name": "sellFormUserInfo.bank_code",
+        "placeholder": "sellFormUserInfo.digit_number_4",
+        "paramsName": "bankCode",
+        "model": "",
+        "regular": "^[0-9]{4}$",
+        "maxLength": "4",
+        "required": false,
+        "tips": "sellForm.bankCodeTips",
+        "multinomialTips": "sellForm.bankSwiftCodeTips",
+        "tipsState": false,
+        "multinomialTipsState": false,
+        "alternativeVal": 0,
+        "alternativeItem": true
+      },
+      {
+        "name": "sellFormUserInfo.swift_code",
+        "placeholder": "sellFormUserInfo.character_code_8",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "^[A-Za-z0-9]{8}$",
+        "maxLength": "8",
+        "required": false,
+        "tips": "sellForm.swiftCodeTips",
+        "multinomialTips": "sellForm.bankSwiftCodeTips",
+        "tipsState": false,
+        "multinomialTipsState": false,
+        "alternativeVal": 1,
+        "alternativeItem": true
+      },
+      {
+        "name": "sellFormUserInfo.branch_code",
+        "placeholder": "sellFormUserInfo.digit_code_3",
+        "paramsName": "routingCodeValue2",
+        "model": "",
+        "regular": "^[0-9]{3}$",
+        "maxLength": "3",
+        "required": true,
+        "tips": "sellForm.branchCodeTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "MYR",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,255}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^[A-Z0-9a-z]{1,20}$",
+        "maxLength": "20",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.swift_code",
+        "placeholder": "sellFormUserInfo.character_code_8_11",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "^[A-Za-z0-9]{8}$|^[A-Za-z0-9]{11}$",
+        "maxLength": "11",
+        "required": true,
+        "tips": "sellForm.swiftCodeTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "LKR",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,100}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^\\d{1,12}$",
+        "maxLength": "12",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.swift_code",
+        "placeholder": "sellFormUserInfo.character_code_8_11",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "^[A-Za-z0-9]{8}$|^[A-Za-z0-9]{11}$",
+        "maxLength": "11",
+        "required": true,
+        "tips": "sellForm.swiftCodeTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.bank_code",
+        "placeholder": "sellFormUserInfo.digit_number_4",
+        "paramsName": "bankCode",
+        "model": "",
+        "regular": "^[0-9]{4}$",
+        "maxLength": "4",
+        "required": true,
+        "tips": "sellForm.bankCodeTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.branch_code",
+        "placeholder": "sellFormUserInfo.digit_code_6",
+        "paramsName": "routingCodeValue2",
+        "model": "",
+        "regular": "^\\d{0,6}$",
+        "maxLength": "6",
+        "required": true,
+        "tips": "sellForm.branchCodeTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "THB",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,60}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^\\d{1,12}$",
+        "maxLength": "12",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.swift_code",
+        "placeholder": "sellFormUserInfo.character_code_8_11",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "^[A-Za-z0-9]{8}$|^[A-Za-z0-9]{11}$",
+        "maxLength": "11",
+        "required": true,
+        "tips": "sellForm.swiftCodeTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "VND",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,60}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "",
+        "maxLength": "30",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.swift_code",
+        "placeholder": "sellFormUserInfo.character_code_8_11",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "^[A-Za-z0-9]{8}$|^[A-Za-z0-9]{11}$",
+        "maxLength": "11",
+        "required": true,
+        "tips": "sellForm.swiftCodeTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "IDR",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,55}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^[0-9\\\\-]{1,20}$",
+        "maxLength": "20",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.swift_code",
+        "placeholder": "sellFormUserInfo.character_code_8_11",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "^[A-Za-z0-9]{8}$|^[A-Za-z0-9]{11}$",
+        "maxLength": "11",
+        "required": true,
+        "tips": "sellForm.swiftCodeTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "EUR",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,70}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.address_account_holder",
+        "placeholder": "sellFormUserInfo.own_address",
+        "paramsName": "address",
+        "model": "",
+        "regular": "^.{1,255}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.AddressTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.bank_name",
+        "placeholder": "sellFormUserInfo.enter_bank_name1",
+        "paramsName": "bankName",
+        "model": "",
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^[A-Z]{2}[0-9]{2}([0-9]|[A-Z])+([0-9A-Z]+){10,31}$",
+        "maxLength": "31",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.swift_code",
+        "placeholder": "sellFormUserInfo.character_code_8_11",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "^[A-Za-z0-9]{8}$|^[A-Za-z0-9]{11}$",
+        "maxLength": "11",
+        "required": true,
+        "tips": "sellForm.swiftCodeTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "NPR",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,255}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^[0-9A-Za-z]{1,50}$",
+        "maxLength": "50",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "itemType": "alternative",
+        "list": [
+          {
+            "name": "sellFormUserInfo.swift_code"
+          },
+          {
+            "name": "sellForm.locationId"
+          }
+        ]
+      },
+      {
+        "name": "sellFormUserInfo.swift_code",
+        "placeholder": "sellFormUserInfo.character_code_8_11",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "^[A-Za-z0-9]{8}$|^[A-Za-z0-9]{11}$",
+        "maxLength": "11",
+        "required": false,
+        "tips": "sellForm.swiftCodeTips",
+        "multinomialTips": "sellForm.bankSwiftTips",
+        "tipsState": false,
+        "multinomialTipsState": false,
+        "alternativeVal": 0,
+        "alternativeItem": true
+      },
+      {
+        "name": "sellForm.locationId",
+        "paramsName": "routingCodeValue2",
+        "model": "",
+        "regular": "^\\d{0,8}$|^[A-Za-z0-9]{8}$|^[A-Za-z0-9]{11}$",
+        "maxLength": "11",
+        "required": false,
+        "tips": "sellForm.locationIdTips",
+        "multinomialTips": "sellForm.bankSwiftTips",
+        "tipsState": false,
+        "multinomialTipsState": false,
+        "alternativeVal": 1,
+        "alternativeItem": true
+      }
+    ]
+  },
+  {
+    "currency": "PKR",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,50}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^[A-Za-z0-9]{1,24}$",
+        "maxLength": "24",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.bank_code",
+        "paramsName": "bankCode",
+        "model": "",
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "sellForm.bankCodeTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "HKD",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,35}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.country",
+        "placeholder": "",
+        "paramsName": "country",
+        "model": "",
+        "regular": "",
+        "maxLength": "",
+        "required": "",
+        "tips": "",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.address_account_holder",
+        "placeholder": "sellFormUserInfo.own_address",
+        "paramsName": "address",
+        "model": "",
+        "regular": "^.{1,255}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.AddressTips",
+        "tipsState": false
+      },
+      {
+        "name": "ArgentinaPay.phone",
+        "placeholder": "sellFormUserInfo.phone_number_placeholder_hkd",
+        "paramsName": "contactNumber",
+        "model": "",
+        "regular": "^\\d{4}-?\\d{4}$",
+        "regular_separator_position": [4],
+        "maxLength": "9",
+        "required": true,
+        "tips": "sellForm.phoneTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.bank_name",
+        "placeholder": "sellFormUserInfo.enter_bank_name1",
+        "paramsName": "bankName",
+        "model": "",
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "",
+        "tipsState": false
+      },
+
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^[0-9a-zA-Z]{1,34}$",
+        "maxLength": "34",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.bank_address",
+        "placeholder": "sellFormUserInfo.enter_bank_address",
+        "paramsName": "bankAddress",
+        "model": "",
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.bank_code1",
+        "placeholder": "sellFormUserInfo.digit_number_3_1",
+        "paramsName": "bankCode",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{3}$",
+        "maxLength": "3",
+        "required": true,
+        "tips": "sellForm.bankCodeTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.swift_code3",
+        "placeholder": "sellFormUserInfo.swift_code2",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "sellForm.swiftCodeTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "PHP",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,150}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.address_account_holder",
+        "placeholder": "sellFormUserInfo.own_address",
+        "paramsName": "address",
+        "model": "",
+        "regular": "^[A-Za-z0-9 -./]{1,69}$",
+        "maxLength": "69",
+        "required": false,
+        "tips": "sellForm.AddressTips",
+        "multinomialTips": "sellForm.AddressMultinomialTips",
+        "tipsState": false,
+        "multinomialTipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^.{1,50}$",
+        "maxLength": "50",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.swift_code",
+        "placeholder": "sellFormUserInfo.character_code_8_11",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "^[A-Za-z0-9]{8}$|^[A-Za-z0-9]{11}$",
+        "maxLength": "11",
+        "required": true,
+        "tips": "sellForm.swiftCodeTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "TRY",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,150}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^(TR|tr)[0-9]{24}$",
+        "maxLength": "26",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "MXN",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,60}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^.{18,18}$",
+        "maxLength": "18",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "BRL",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,60}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellForm.contactNumber",
+        "paramsName": "contactNumber",
+        "model": "",
+        "regular": "^.{1,17}$",
+        "maxLength": "17",
+        "required": true,
+        "tips": "sellForm.contactNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellForm.CPFNumber",
+        "paramsName": "idNumber",
+        "model": "",
+        "regular": "^[0-9.-]{11,20}$",
+        "maxLength": "20",
+        "required": true,
+        "tips": "sellForm.CPFNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_type",
+        "paramsName": "bankAccountType",
+        "model": "",
+        "type": "radio",
+        "radioList": [
+          {
+            "key": "3",
+            "value": "sellForm.bankAccountTypeLi_Saving"
+          },
+          {
+            "key": "4",
+            "value": "sellForm.bankAccountTypeLi_Checking"
+          }
+        ],
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "Invalid Account Type!",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^.{1,12}$",
+        "maxLength": "12",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.branch_code",
+        "placeholder": "sellFormUserInfo.digit_code_6",
+        "paramsName": "routingCodeValue2",
+        "model": "",
+        "regular": "^[0-9]{1,6}$",
+        "maxLength": "6",
+        "required": true,
+        "tips": "sellForm.branchCodeTips",
+        "tipsState": false
+      },
+      {
+        "itemType": "alternative",
+        "list": [
+          {
+            "name": "sellFormUserInfo.bank_code"
+          },
+          {
+            "name": "sellFormUserInfo.swift_code"
+          }
+        ]
+      },
+      {
+        "name": "sellFormUserInfo.bank_code",
+        "placeholder": "sellFormUserInfo.digit_number_3",
+        "paramsName": "bankCode",
+        "model": "",
+        "regular": "^[0-9]{3}$",
+        "maxLength": "3",
+        "required": false,
+        "tips": "sellForm.bankCodeTips",
+        "multinomialTips": "sellForm.bankSwiftCodeTips",
+        "tipsState": false,
+        "multinomialTipsState": false,
+        "alternativeVal": 0,
+        "alternativeItem": true
+      },
+      {
+        "name": "sellFormUserInfo.swift_code",
+        "placeholder": "sellFormUserInfo.character_code_8_11",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "^[A-Za-z0-9]{8}$|^[A-Za-z0-9]{11}$",
+        "maxLength": "11",
+        "required": false,
+        "tips": "sellForm.swiftCodeTips",
+        "multinomialTips": "sellForm.bankSwiftCodeTips",
+        "tipsState": false,
+        "multinomialTipsState": false,
+        "alternativeVal": 1,
+        "alternativeItem": true
+      }
+    ]
+  },
+  {
+    "currency": "ARS",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,35}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellForm.IDType",
+        "paramsName": "idType",
+        "model": "",
+        "type": "radio",
+        "radioList": [
+          "sellForm.bankAccountTypeLi_CUIT",
+          "sellForm.bankAccountTypeLi_CUIL"
+        ],
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "sellForm.IDTypeTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellForm.IDNumber",
+        "paramsName": "idNumber",
+        "model": "",
+        "regular": "^[0-9]{11}$",
+        "maxLength": "11",
+        "required": true,
+        "tips": "sellForm.IDNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellForm.accountType",
+        "paramsName": "bankAccountType",
+        "model": "",
+        "type": "radio",
+        "radioList": [
+          {
+            "key": "3",
+            "value": "sellForm.bankAccountTypeLi_Saving"
+          },
+          {
+            "key": "4",
+            "value": "sellForm.bankAccountTypeLi_Checking"
+          },
+          {
+            "key": "7",
+            "value": "sellForm.accountTypeLi_Maestra"
+          }
+        ],
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "sellForm.accountTypeTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^.{22,22}$",
+        "maxLength": "22",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "PEN",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,100}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.id_type",
+        "paramsName": "idType",
+        "model": "",
+        "type": "radio",
+        "radioList": [
+          "sellForm.IDTypeLi_DNI",
+          "sellForm.IDTypeLi_RUC",
+          "sellForm.IDTypeLi_CE",
+          "sellForm.IDTypeLi_PASS"
+        ],
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "Invalid ID Type!",
+        "tipsState": false
+      },
+      {
+        "name": "sellForm.IDNumber",
+        "paramsName": "idNumber",
+        "model": "",
+        "regular": "^.{8,12}$",
+        "minLength": "8",
+        "maxLength": "12",
+        "required": true,
+        "tips": "sellForm.IDNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_type",
+        "paramsName": "bankAccountType",
+        "model": "",
+        "type": "radio",
+        "radioList": [
+          {
+            "key": "3",
+            "value": "sellForm.bankAccountTypeLi_Saving"
+          },
+          {
+            "key": "4",
+            "value": "sellForm.bankAccountTypeLi_Checking"
+          },
+          {
+            "key": "7",
+            "value": "sellForm.accountTypeLi_Maestra"
+          }
+        ],
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "Invalid Account Type!",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^.{18,20}$",
+        "maxLength": "20",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "CLP",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,60}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellForm.RUTNumber",
+        "paramsName": "idNumber",
+        "model": "",
+        "regular": "^[0-9a-zA-Z\\.-]{8,}$",
+        "maxLength": "",
+        "required": true,
+        "tips": "sellForm.RUTNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_type",
+        "paramsName": "bankAccountType",
+        "model": "",
+        "type": "radio",
+        "radioList": [
+          {
+            "key": "3",
+            "value": "sellForm.bankAccountTypeLi_Saving"
+          },
+          {
+            "key": "4",
+            "value": "sellForm.bankAccountTypeLi_Checking"
+          }
+        ],
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "Invalid Account Type!",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^.{1,45}$",
+        "maxLength": "45",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.swift_code",
+        "placeholder": "sellFormUserInfo.character_code_8_11",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "^[A-Za-z0-9]{8}$|^[A-Za-z0-9]{11}$",
+        "maxLength": "11",
+        "required": true,
+        "tips": "sellForm.swiftCodeTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "AUD",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,70}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.address_account_holder",
+        "placeholder": "sellFormUserInfo.own_address",
+        "paramsName": "address",
+        "model": "",
+        "regular": "^.{1,255}$",
+        "maxLength": "256",
+        "required": true,
+        "tips": "sellForm.AddressTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.city",
+        "paramsName": "city",
+        "model": "",
+        "regular": "^.{1,255}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.CityTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.postcode",
+        "paramsName": "postcode",
+        "model": "",
+        "regular": "^.{1,15}$",
+        "maxLength": "15",
+        "required": true,
+        "tips": "sellForm.PostcodeTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^[A-Za-z0-9]{0,9}$",
+        "maxLength": "9",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.bsb_code",
+        "placeholder": "sellFormUserInfo.digit_number_6",
+        "paramsName": "routingCodeValue2",
+        "model": "",
+        "regular": "^[0-9]{6}$",
+        "maxLength": "6",
+        "required": true,
+        "tips": "sellForm.BSBCodeTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "KRW",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,255}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellForm.Email",
+        "paramsName": "email",
+        "model": "",
+        "regular": "^[a-z0-9]+([._\\\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$",
+        "maxLength": "100",
+        "required": true,
+        "tips": "sellForm.EmailTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellForm.contactNumber",
+        "paramsName": "contactNumber",
+        "model": "",
+        "regular": "^[0-9+/-\\s]*$",
+        "maxLength": "17",
+        "required": true,
+        "tips": "sellForm.contactNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^[0-9a-zA-Z.,_-\\s]*$",
+        "maxLength": "50",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.bank_code",
+        "placeholder": "sellFormUserInfo.digit_number_3",
+        "paramsName": "bankCode",
+        "model": "",
+        "regular": "^[0-9]{3}$",
+        "maxLength": "3",
+        "required": true,
+        "tips": "sellForm.bankCodeTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "GBP",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,70}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.country",
+        "placeholder": "",
+        "paramsName": "country",
+        "model": "",
+        "regular": "",
+        "maxLength": "",
+        "required": "",
+        "tips": "",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.bank_name",
+        "placeholder": "sellFormUserInfo.enter_bank_name1",
+        "paramsName": "bankName",
+        "model": "",
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^[0-9A-Z]{1,50}$",
+        "maxLength": "50",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.sort_code",
+        "placeholder": "sellFormUserInfo.digit_number_six",
+        "paramsName": "routingCodeValue2",
+        "model": "",
+        "regular": "^[0-9]{6}$",
+        "maxLength": "6",
+        "required": true,
+        "tips": "sellForm.SortCodeTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.swift_code",
+        "placeholder": "sellFormUserInfo.swift_code1",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "sellForm.swiftCodeTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "INR",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,55}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^[A-z0-9]{6,20}$",
+        "maxLength": "20",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellForm.IFSC",
+        "paramsName": "routingCodeValue2",
+        "model": "",
+        "regular": "^[A-Za-z]{4}[A-Z0-9a-z]{7}$",
+        "maxLength": "11",
+        "required": true,
+        "tips": "sellForm.IFSCTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "SGD",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,150}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.address_account_holder",
+        "placeholder": "sellFormUserInfo.own_address",
+        "paramsName": "address",
+        "model": "",
+        "regular": "^.{1,200}$",
+        "maxLength": "200",
+        "required": true,
+        "tips": "sellForm.AddressTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.city",
+        "paramsName": "city",
+        "model": "",
+        "regular": "^.{1,50}$",
+        "maxLength": "50",
+        "required": true,
+        "tips": "sellForm.CityTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^[A-Za-z0-9]+$",
+        "maxLength": "",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.swift_code",
+        "placeholder": "sellFormUserInfo.character_code_6_11",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "^[A-Za-z0-9]{8}$|^[A-Za-z0-9]{11}$",
+        "maxLength": "11",
+        "required": true,
+        "tips": "sellForm.swiftCodeTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "COP",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,60}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellForm.Email",
+        "paramsName": "email",
+        "model": "",
+        "regular": "^[a-z0-9]+([._\\\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,100}[a-z0-9]+$",
+        "maxLength": "100",
+        "required": true,
+        "tips": "sellForm.EmailTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.id_type",
+        "paramsName": "idType",
+        "model": "",
+        "type": "radio",
+        "radioList": [
+          "sellForm.IDTypeLi_NIT",
+          "sellForm.IDTypeLi_CC",
+          "sellForm.IDTypeLi_CE",
+          "sellForm.IDTypeLi_PASS",
+          "sellForm.IDTypeLi_TI"
+        ],
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "Invalid ID Type!",
+        "tipsState": false
+      },
+      {
+        "name": "sellForm.IDNumber",
+        "paramsName": "idNumber",
+        "model": "",
+        "regular": "^[0-9]{1,15}$",
+        "maxLength": "15",
+        "required": true,
+        "tips": "sellForm.IDNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_type",
+        "paramsName": "bankAccountType",
+        "model": "",
+        "type": "radio",
+        "radioList": [
+          {
+            "key": "3",
+            "value": "sellForm.bankAccountTypeLi_Saving"
+          },
+          {
+            "key": "4",
+            "value": "sellForm.bankAccountTypeLi_Checking"
+          }
+        ],
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "Invalid Account Type!",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^.{1,45}$",
+        "maxLength": "45",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.swift_code",
+        "placeholder": "sellFormUserInfo.character_code_8_11",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "^[A-Za-z0-9]{8}$|^[A-Za-z0-9]{11}$",
+        "maxLength": "11",
+        "required": true,
+        "tips": "sellForm.swiftCodeTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "UYU",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,60}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.id_type",
+        "paramsName": "idType",
+        "model": "",
+        "type": "radio",
+        "radioList": ["sellForm.IDTypeLi_RUT", "sellForm.IDTypeLi_CI"],
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "Invalid ID Type!",
+        "tipsState": false
+      },
+      {
+        "name": "sellForm.IDNumber",
+        "paramsName": "idNumber",
+        "model": "",
+        "regular": "^.{7,12}$",
+        "maxLength": "12",
+        "required": true,
+        "tips": "sellForm.IDNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellForm.accountType",
+        "paramsName": "bankAccountType",
+        "model": "",
+        "type": "radio",
+        "radioList": [
+          {
+            "key": "3",
+            "value": "sellForm.bankAccountTypeLi_Saving"
+          },
+          {
+            "key": "4",
+            "value": "sellForm.bankAccountTypeLi_Checking"
+          }
+        ],
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "sellForm.accountTypeTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^.{1,45}$",
+        "maxLength": "45",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.swift_code",
+        "placeholder": "sellFormUserInfo.character_code_8_11",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "^[A-Za-z0-9]{8}$|^[A-Za-z0-9]{11}$",
+        "maxLength": "11",
+        "required": true,
+        "tips": "sellForm.swiftCodeTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.branch_code",
+        "placeholder": "sellFormUserInfo.digit_code_3",
+        "paramsName": "routingCodeValue2",
+        "model": "",
+        "regular": "^[0-9]{3}$",
+        "maxLength": "3",
+        "required": true,
+        "tips": "sellForm.branchCodeTips",
+        "tipsState": false
+      }
+    ]
+  },
+  {
+    "currency": "CAD",
+    "form": [
+      {
+        "name": "sellFormUserInfo.personal_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.account_holder",
+        "placeholder": "sellFormUserInfo.full_name",
+        "paramsName": "name",
+        "model": "",
+        "regular": "^[A-Za-z0-9 ]{4,255}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.NameTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.address_account_holder",
+        "placeholder": "sellFormUserInfo.own_address",
+        "paramsName": "address",
+        "model": "",
+        "regular": "^.{1,255}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.AddressTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.city",
+        "paramsName": "city",
+        "model": "",
+        "regular": "^.{1,255}$",
+        "maxLength": "255",
+        "required": true,
+        "tips": "sellForm.CityTips",
+        "tipsState": false,
+        "width": "164"
+      },
+      {
+        "name": "sellFormUserInfo.state",
+        "paramsName": "state",
+        "model": "",
+        "regular": "^.{1,50}$",
+        "maxLength": "50",
+        "required": true,
+        "tips": "sellForm.StateTips",
+        "tipsState": false,
+        "width": "164"
+      },
+      {
+        "name": "ArgentinaPay.phone",
+        "placeholder": "sellFormUserInfo.phone_number_placeholder_cad",
+        "paramsName": "contactNumber",
+        "model": "",
+        "regular": "^\\d{3}-?\\d{3}-?\\d{4}$",
+        "regular_separator_position": [3, 6],
+        "maxLength": "12",
+        "required": true,
+        "tips": "sellForm.phoneTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.postcode",
+        "paramsName": "postcode",
+        "model": "",
+        "regular": "^.{1,15}$",
+        "maxLength": "15",
+        "required": true,
+        "tips": "sellForm.PostcodeTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_information",
+        "itemType": "form-tips"
+      },
+      {
+        "name": "sellFormUserInfo.bank_name",
+        "placeholder": "sellFormUserInfo.enter_bank_name1",
+        "paramsName": "bankName",
+        "model": "",
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tips": "",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.account_number",
+        "placeholder": "sellFormUserInfo.bank_account_number",
+        "paramsName": "accountNumber",
+        "model": "",
+        "regular": "^[A-Za-z0-9]{1,50}$",
+        "maxLength": "50",
+        "required": true,
+        "tips": "sellForm.accountNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.bank_code",
+        "placeholder": "sellFormUserInfo.digit_number_3",
+        "paramsName": "bankCode",
+        "model": "",
+        "regular": "^[0-9]{3}$",
+        "maxLength": "3",
+        "required": true,
+        "tips": "sellForm.bankCodeTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.transit_code",
+        "placeholder": "sellFormUserInfo.digit_number_5",
+        "paramsName": "routingCodeValue2",
+        "model": "",
+        "regular": "^[0-9]{5}$",
+        "maxLength": "5",
+        "required": true,
+        "tips": "sellForm.TransitNumberTips",
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.swift_code3",
+        "paramsName": "routingCodeValue1",
+        "model": "",
+        "regular": "",
+        "maxLength": "",
+        "required": true,
+        "tipsState": false
+      },
+      {
+        "name": "sellFormUserInfo.routing_code",
+        "placeholder": "sellFormUserInfo.digit_number_8",
+        "paramsName": "routingCode",
+        "model": "",
+        "regular": "^[0-9]{8,9}$",
+        "maxLength": "9",
+        "required": true,
+        "tips": "sellFormUserInfo.routing_code1",
+        "tipsState": false
+      }
+    ]
+  }
+]

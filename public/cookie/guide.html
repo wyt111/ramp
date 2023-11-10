@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
+    />
+    <link rel="icon" href="../ico.webp" />
+    <title>Guide</title>
+    <link rel="stylesheet" href="./css/guide.css" />
+  </head>
+  <body ondragstart="return false">
+    <div class="guide">
+      <div class="nav">
+        <a href="#" onclick="history.back()">
+          <img class="back-img" src="./imgs/back.svg" alt="" />
+        </a>
+      </div>
+      <div class="title">
+        Here's a step-by-step guide on how to enable
+        <span class="third-party">third-party</span> cookies in the most popular
+        browsers:
+      </div>
+      <div class="list">
+        <div class="item">
+          <div class="label">
+            <img src="./imgs/chrome.png" alt="" class="img" />
+            <span class="text"> Google Chrome</span>
+          </div>
+          <div class="content">
+            <div class="p">
+              Open Chrome and click on the three-dot menu in the top right
+              corner.
+            </div>
+            <div class="p">Go to "Settings" and scroll down to the bottom.</div>
+            <div class="p">
+              Click on "Advanced" to expand the advanced settings.
+            </div>
+            <div class="p">
+              Under the "Privacy and security" section, click on "Site
+              settings."
+            </div>
+            <div class="p">Look for the "Cookies" section and click on it.</div>
+            <div class="p">
+              Toggle the switch to enable "Allow sites to save and read cookie
+              data" or select "Block
+              <span class="third-party">third-party</span> cookies" if it's
+              already enabled.
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="label">
+            <img src="./imgs/firefox.png" alt="" class="img" />
+            <span class="text">Firefox</span>
+          </div>
+          <div class="content">
+            <p class="p">Click the Tools menu from the top toolbar.</p>
+            <p class="p">Choose Options.</p>
+            <p class="p">Click the Privacy tab.</p>
+            <p class="p">
+              Under "History" select "Use custom settings for history" from the
+              drop-down menu beside "Firefox will."
+            </p>
+            <p class="p">
+              Ensure that the checkboxes for "Accept cookies from sites" and
+              "Accept <span class="third-party">third-party</span> cookies" are
+              both checked.
+            </p>
+            <p class="p">Click OK.</p>
+            <p class="p">
+              For more information on Mozilla, please see Firefox Help for more
+              instructions on enabling cookies.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="label">
+            <img src="./imgs/safari.png" alt="" class="img" />
+            <span class="text">Safari</span>
+          </div>
+          <div class="content">
+            <div class="p"></div>
+            <div class="p">
+              Open Safari and click on "Safari" in the top menu bar.
+            </div>
+            <div class="p">
+              Select "Preferences" and go to the "Privacy" tab.
+            </div>
+            <div class="p">
+              Under the "Cookies and website data" section, select "Always
+              allow" or "Allow from websites I visit" to enable
+              <span class="third-party">third-party</span> cookies.
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="label">
+            <img src="./imgs/edge.png" alt="" class="img" />
+            <span class="text">Microsoft Edge</span>
+          </div>
+          <div class="content">
+            <div class="p"></div>
+            <div class="p">
+              Open Microsoft Edge and click on the three-dot menu in the top
+              right corner.
+            </div>
+            <div class="p">
+              Go to "Settings" and click on "Cookies and site permissions" in
+              the left-hand menu.
+            </div>
+            <div class="p">
+              Under the "Cookies and site permissions" section, click on
+              "Cookies and site data."
+            </div>
+            <div class="p">
+              Toggle the switch next to "Block
+              <span class="third-party">third-party</span> cookies" to disable
+              it.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tips">
+        Please note that browser versions and interfaces may vary, so the exact
+        steps might differ slightly.
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    function getIsThirdPartyCookieDisabled() {
+      let isThirdPartyCookieDisabled = false;
+      if (window.self !== window.top) {
+        // 当前页面在 iframe 中
+        isThirdPartyCookieDisabled = true;
+      } else {
+        // 当前页面不在 iframe 中
+        isThirdPartyCookieDisabled = false;
+      }
+      return isThirdPartyCookieDisabled;
+    }
+
+    let isThirdPartyCookieDisabled = getIsThirdPartyCookieDisabled();
+
+    if (isThirdPartyCookieDisabled) {
+      // 禁用 三方 cookie
+    } else {
+      // 禁用全局 cookie;
+      const elements = document.getElementsByClassName("third-party");
+      for (let i = 0; i < elements.length; i++) {
+        elements[i].style.display = "none";
+      }
+    }
+  </script>
+</html>

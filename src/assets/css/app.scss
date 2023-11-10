@@ -1,0 +1,422 @@
+//最新字体包
+@font-face {
+  font-family: "Medium";
+  src: url("../../assets/fonts/SanFranciscoDisplay-Medium.otf");
+  //font-display: optional;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Regular";
+  src: url("../../assets/fonts/SanFranciscoDisplay-Regular.otf");
+  //font-display: optional;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Semibold";
+  src: url("../../assets/fonts/SanFranciscoDisplay-Semibold.otf");
+  //font-display: optional;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../../assets/fonts/sf-pro-display_light_300.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../../assets/fonts/sf-pro-display_regular_400.woff2")
+    format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../../assets/fonts/sf-pro-display_medium_500.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../../assets/fonts/sf-pro-display_semibold_600.woff2")
+    format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../../assets/fonts/sf-pro-display_bold_700.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans";
+  src: url("../../assets/fonts/HarmonyOS_Sans_Light_300.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans";
+  src: url("../../assets/fonts/HarmonyOS_Sans_Regular_400.woff2")
+    format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans";
+  src: url("../../assets/fonts/HarmonyOS_Sans_Medium_500.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans";
+  src: url("../../assets/fonts/HarmonyOS_Sans_Bold_700.woff2") format("woff2");
+  font-weight: 700;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+a,
+img,
+button,
+input,
+textarea,
+span,
+div {
+  -webkit-tap-highlight-color: transparent;
+}
+::-webkit-scrollbar {
+  display: none;
+  /* Chrome Safari */
+  width: 0 !important;
+}
+/* 自定义滚动条样式 */
+.custom-scrollbar {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+  /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-color: rgba(0, 89, 218, 1) rgba(213, 218, 221, 1); /* 滚动条拖动块和背景颜色 */
+  /* IE */
+  scrollbar-face-color: rgba(0, 89, 218, 1);
+  scrollbar-track-color: rgba(213, 218, 221, 1);
+}
+/* 这是针对缺省样式 (必须的) */
+.custom-scrollbar::-webkit-scrollbar {
+  display: block;
+  width: 5px !important;
+}
+/* 滚动条的滑轨背景颜色 */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: rgba(213, 218, 221, 1);
+  border-radius: 0.49rem;
+}
+/* 滑块颜色 */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 89, 218, 1);
+  border-radius: 0.49rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  touch-action: pan-y;
+}
+img:not([src]),
+img[src=""] {
+  opacity: 0 !important;
+  filter: alpha(opacity=0) !important;
+}
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html,
+body,
+#app,
+#viewBox {
+  width: 100%;
+  height: 100%;
+  font-size: 0.16rem;
+  overflow: hidden;
+
+  //禁止复制
+  -moz-user-select: none;
+  /* Firefox私有属性 */
+  -webkit-user-select: none;
+  /* WebKit内核私有属性 */
+  -ms-user-select: none;
+  /* IE私有属性(IE10及以后) */
+  -khtml-user-select: none;
+  /* KHTML内核私有属性 */
+  -o-user-select: none;
+  /* Opera私有属性 */
+  user-select: none;
+  /* CSS3属性 */
+  //页面变为灰色样式
+  //filter: grayscale(1);
+}
+
+#viewBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.kycToast {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > div {
+    width: 90%;
+    max-width: 3.5rem;
+    // height: 2.5rem;
+    background: #ffffff;
+    border-radius: 0.18rem;
+    padding: 0.28rem 0.16rem 0.32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > img {
+      height: 0.36rem;
+      margin-bottom: 0.12rem;
+    }
+    div:nth-of-type(1) {
+      font-family: Regular;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #949ea4;
+    }
+    div:nth-of-type(2) {
+      width: 100%;
+      height: 0.5rem;
+      background: #e55643;
+      font-family: Medium;
+      font-weight: 500;
+      color: #ffffff;
+      text-align: center;
+      line-height: 0.5rem;
+      border-radius: 0.3rem;
+      margin-top: 0.32rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.buyCrypto_iframe_view {
+  width: 375px;
+  height: 580px;
+  background: #ffffff;
+  border-radius: 0.15rem;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 0.96rem rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  padding: 0.26rem 0 0.2rem;
+}
+
+#App {
+  -ms-overflow-style: none;
+  /* IE 10+ */
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  #navigationBar {
+    padding: 0 0.16rem;
+  }
+  .contentView {
+    flex: 1;
+    overflow: auto;
+    .routerView_box {
+      height: 100%;
+      .routerView {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        #buyNavTab-container {
+          padding: 0 0.16rem;
+        }
+        .router-view {
+          padding: 0 0.16rem;
+        }
+      }
+    }
+    & > #routerMenu {
+      padding: 0 0.08rem 0.67rem;
+    }
+  }
+}
+.van-overlay {
+  border-radius: 0.1rem;
+}
+
+.van-toast {
+  font-size: 0.16rem !important;
+  line-height: 0.2rem !important;
+  padding: 0.08rem 0.12rem !important;
+  border-radius: 0.08rem !important;
+  min-width: 1.2rem !important;
+  max-width: 3.43rem !important;
+  box-sizing: border-box !important;
+}
+.collapse-transition.v-enter-active,
+.collapse-transition.v-leave-active {
+  transition-duration: 0.3s !important;
+  transition-timing-function: ease !important;
+}
+
+.el-popover.el-popper {
+  background: #fff;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.12rem;
+  line-height: 140%;
+  color: #252830;
+  max-width: 3.2rem;
+  padding: 0.12rem;
+  min-width: 0;
+  word-break: initial;
+  text-align: left;
+  box-shadow: 0px 0px 0.32rem rgba(0, 0, 0, 0.12);
+  border: 0;
+  border-radius: 0.08rem;
+
+  &.fade-in-linear-leave-active {
+    transition-duration: 0s !important;
+  }
+
+  &[x-placement^="top"] {
+    margin-bottom: 0.08rem;
+    .popper__arrow {
+      border-color: transparent;
+    }
+    .popper__arrow::after {
+      border-top-color: #fff;
+      margin-left: -0.01rem;
+    }
+  }
+  &[x-placement^="left"] {
+    .popper__arrow {
+      border-color: transparent;
+    }
+    .popper__arrow::after {
+      border-left-color: #fff;
+    }
+  }
+}
+
+.el-tooltip__popper {
+  background: #fff !important;
+  font-family: "SF Pro Display" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 0.12rem !important;
+  line-height: 140% !important;
+  color: #252830 !important;
+  max-width: 3.2rem !important;
+  padding: 0.12rem !important;
+  min-width: 0 !important;
+  word-break: initial !important;
+  word-wrap: initial !important;
+  text-align: left !important;
+  box-shadow: 0px 0px 0.32rem rgba(0, 0, 0, 0.12);
+  border: 0 !important;
+  border-radius: 0.08rem !important;
+  z-index: 99999999 !important;
+  &[x-placement^="top"] {
+    .popper__arrow {
+      border-top-color: #fff !important;
+      &:after {
+        border-top-color: #fff !important;
+      }
+    }
+  }
+  &[x-placement^="bottom"] {
+    .popper__arrow {
+      border-bottom-color: #fff !important;
+      &:after {
+        border-bottom-color: #fff !important;
+      }
+    }
+  }
+}
+
+//tost提示单词换行
+.van-toast {
+  &.paste_tips_toast {
+    top: 56%;
+    .van-toast__text {
+      min-width: 2.2rem;
+    }
+  }
+  .van-toast__text {
+    word-break: break-word !important;
+  }
+}
+
+@media (min-width: 791px) {
+  html,
+  body,
+  #app,
+  #viewBox {
+    -webkit-overflow-scrolling: touch;
+    .alchemy-pay-logo {
+      &:before {
+        content: "";
+        position: fixed;
+        left: 0.8rem;
+        top: 0.4rem;
+        width: 1.28rem;
+        height: 0.25rem;
+        background: url(../../assets/images/AlchemyPay.svg);
+        z-index: 999;
+      }
+    }
+  }
+
+  body {
+    background: url(../../assets/images/bg.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  .buyCrypto_iframe_view {
+    // padding: 0.26rem .16rem;
+  }
+}
+
+@media (max-width: 791px) {
+  .buyCrypto_iframe_view {
+    width: 100%;
+    height: 100%;
+    // min-height: 500px;
+    border-radius: 0;
+    margin-top: 0;
+  }
+}
